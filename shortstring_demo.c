@@ -5,11 +5,11 @@
 int main() {
 	printf("Enter short strings of up to 6 chars to dump, q to quit.\n");
 	while (1) {
-		char buf[7];
+		char buf[7] = "azertyui";
 		size_t len;
 		printf("Short string --> ");
-		if (scanf("%6s", buf) == EOF)
-			break;
+		// if (scanf("%6s", buf) == EOF)
+		//	break;
 		if (!strcmp(buf, "q"))
 			break;
 		len = strlen(buf);
